@@ -13,7 +13,7 @@ export UPDATE_ZSH_DAYS=15
 export LANG=en_US.UTF-8
 export ARCHFLAGS="-arch x86_64"
 export EDITOR='nvim'
-export PATH="$HOME/bin:/usr/local/bin:$PATH:/Users/<USER>/.local/bin"
+export PATH="$HOME/bin:/usr/local/bin:$PATH:/home/<USER>/.local/bin"
 export GPG_TTY=$(tty)
 
 source $ZSH/oh-my-zsh.sh
