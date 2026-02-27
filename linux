@@ -1,0 +1,26 @@
+ulimit -n 8096;
+autoload -Uz compinit && compinit
+unsetopt PROMPT_SP
+setopt rm_star_silent
+
+ZSH_THEME="steeef"
+DISABLE_AUTO_UPDATE="false"
+DISABLE_UPDATE_PROMPT="true"
+plugins=(git ubuntu docker docker-compose gitignore python rsync tmux)
+
+export ZSH="/home/<USER>/.oh-my-zsh"
+export UPDATE_ZSH_DAYS=15
+export LANG=en_US.UTF-8
+export ARCHFLAGS="-arch x86_64"
+export EDITOR='nvim'
+export PATH="$HOME/bin:/usr/local/bin:$PATH:/Users/<USER>/.local/bin"
+export GPG_TTY=$(tty)
+
+source $ZSH/oh-my-zsh.sh
+
+alias v='nvim'
+alias vim='nvim'
+alias cp='rsync -avP'
+alias tf="tofu"
+
+zmodload zsh/zprof
